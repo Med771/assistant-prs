@@ -22,8 +22,8 @@ class LoggerConfig:
     RECORD_MODE_W: str = "w"
     RECORD_MODE_A: str = "a"
 
-    DEBUG_FMT: str = '#%(levelname)-5s [%(asctime)s] - %(message)s'
-    INFO_FMT: str = '#%(levelname)-5s [%(asctime)s] - %(message)s'
+    DEBUG_FMT: str = '#%(levelname)-5s [%(asctime)s] - %(filename)s:%(message)s'
+    INFO_FMT: str = '#%(levelname)-5s [%(asctime)s] - %(filename)s:%(message)s'
     WARN_FMT: str = '[%(asctime)s] #%(levelname)-8s %(filename)s:%(lineno)d - %(message)s'
     ERROR_FMT: str = '[%(asctime)s] #%(levelname)-8s %(filename)s:%(lineno)d %(funcName)s() - %(message)s'
     CRIT_FMT: str = '[%(asctime)s] #%(levelname)-8s  %(filename)s:%(lineno)d %(funcName)s() - %(message)s'
